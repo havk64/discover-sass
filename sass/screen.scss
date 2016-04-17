@@ -4,3 +4,39 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+body {
+    width: 810px;
+    margin: 0 auto;
+    div.container {
+        padding: 0 20px 20px;
+        header {
+            border-bottom: 4px solid #bbb;
+            box-shadow: white 0 2px 0;
+        }
+    }
+}
+
+header {
+    nav{
+        ul {
+            li {
+                a {
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+html.light body {
+    background: #ececec;
+    color: #111111;
+}
+
+html.dark body {
+    background: #2f2f2f;
+    color: #c6c6c6;
+}
