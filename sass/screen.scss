@@ -13,17 +13,15 @@ body {
     }
 }
 
-header {
-    nav{
-        ul {
-            li {
-                a {
-                    
-                }
-            }
+
+ul {
+    li {
+        a {
+            text-decoration: none;
         }
     }
 }
+
 
 
 
@@ -31,6 +29,9 @@ html.light {
     body {
     background: #ececec;
     color: #111111;
+    }
+    nav li > a {
+        color: black;
     }
 }
 
@@ -44,6 +45,9 @@ html.light {
     header {
         box-shadow: white 0 1px 0;
         border-bottom: 4px solid #bbb;
+        padding: 22px 0 0;
+        position: relative;
+        color: #111111;
     }
 
 } 
