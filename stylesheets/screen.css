@@ -65,17 +65,18 @@ body {
   /* line 11, ../sass/screen.scss */
   body div.container {
     padding: 0 20px 20px; }
-    /* line 13, ../sass/screen.scss */
-    body div.container header {
-      border-bottom: 4px solid #bbb;
-      box-shadow: white 0 2px 0; }
 
-/* line 34, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 html.light body {
   background: #ececec;
   color: #111111; }
 
-/* line 39, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 html.dark body {
   background: #2f2f2f;
   color: #c6c6c6; }
+
+/* line 44, ../sass/screen.scss */
+html.light header {
+  box-shadow: white 0 1px 0;
+  border-bottom: 4px solid #bbb; }

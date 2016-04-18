@@ -3,17 +3,13 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "base";
 
 body {
     width: 810px;
     margin: 0 auto;
     div.container {
         padding: 0 20px 20px;
-        header {
-            border-bottom: 4px solid #bbb;
-            box-shadow: white 0 2px 0;
-        }
     }
 }
 
@@ -31,12 +27,23 @@ header {
 
 
 
-html.light body {
+html.light {
+    body {
     background: #ececec;
     color: #111111;
+    }
 }
 
 html.dark body {
     background: #2f2f2f;
     color: #c6c6c6;
 }
+
+//Using separate block to reuse the same statement for other elements too.
+html.light {
+    header {
+        box-shadow: white 0 1px 0;
+        border-bottom: 4px solid #bbb;
+    }
+
+} 
