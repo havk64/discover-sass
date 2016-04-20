@@ -1,0 +1,37 @@
+$bg-color: #ececec;
+$color: #111111;
+$border-color: #bbb;
+$box-shadow-color: white;
+
+@mixin theme-light {
+    html.light > body {
+        background: $bg-color;
+        color: $color;
+        div header {
+            color: $color;
+            border-bottom: 4px solid $border-color;
+            box-shadow: $box-shadow-color 0 1px 0;
+        }
+        nav li{
+            float: left;
+            padding-right: 10px;
+            white-space: nowrap;
+            & > a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@mixin header {
+    header {
+        font-family: 'Museo Sans', "museosans-web", 'serif';
+        font-size: 1.3em;
+        font-size: 100%;
+        border-width: 4px;
+        padding: 22px 0 0;
+        position: relative;
+        font-size: 1.3em;
+    }
+}

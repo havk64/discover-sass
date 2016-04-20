@@ -1,0 +1,10 @@
+@mixin main-body {
+    body {
+        width: 810px;
+        margin: 0 auto;
+        font-family: 'Lucida Grande', Arial, sans-serif;
+        div.container {
+            padding: 0 20px 20px;
+        }
+    }   
+}
