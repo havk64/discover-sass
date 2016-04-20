@@ -4,56 +4,23 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "base";
-
-body {
-    width: 810px;
-    margin: 0 auto;
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    div.container {
-        padding: 0 20px 20px;
-    }
-}
-
-html.light {
-    body {
-    background: #ececec;
-    color: #111111;
-    }
-    nav li{
-        float: left;
-        padding-right: 10px;
-        white-space: nowrap;
-        & > a {
-        color: black;
-        text-decoration: none;
-        } 
-    }
-}
-
-html.dark body {
-    background: #2f2f2f;
-    color: #c6c6c6;
-}
+@import "light";
+//@import "dark";
+@import "main";
+@include main-body;
+@include header;
+@include theme-light;
+//@include theme-dark;
 
 //Using separate block to reuse the same statement for other elements too.
 html.light {
     header {
-        font-family: 'Museo Sans', "museosans-web", 'serif';
-        font-size: 1.3em;
-        font-size: 100%;
-        border-width: 4px;
-        box-shadow: white 0 1px 0;
-        border-bottom: 4px solid #bbb;
-        padding: 22px 0 0;
-        position: relative;
-        color: #111111;
-        font-size: 1.3em;
         & > nav {
             padding-bottom: 10px;
         }
     }
 } 
 
-#main-nav {
+.main-nav {
     display: inline-block;
 }
